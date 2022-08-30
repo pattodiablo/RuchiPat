@@ -2,9 +2,45 @@
     "section1": {
         "files": [
             {
-                "url": "assets/dino.png",
-                "key": "dino",
-                "type": "image"
+                "url": "assets/Images/chinche.png",
+                "type": "image",
+                "key": "chinche"
+            },
+            {
+                "url": [
+                    "src/scenes/Prefabs/Chinche.js"
+                ],
+                "type": "scripts",
+                "key": "Chinche"
+            },
+            {
+                "url": "assets/Images/pat.png",
+                "type": "image",
+                "key": "pat"
+            },
+            {
+                "url": [
+                    "src/scenes/Prefabs/PatPlayer.js"
+                ],
+                "type": "scripts",
+                "key": "PatPlayer"
+            },
+            {
+                "url": "assets/Images/ruchi.png",
+                "type": "image",
+                "key": "ruchi"
+            },
+            {
+                "url": [
+                    "src/scenes/Prefabs/Stick.js"
+                ],
+                "type": "scripts",
+                "key": "Stick"
+            },
+            {
+                "url": "assets/Images/stick1.png",
+                "type": "image",
+                "key": "stick1"
             }
         ]
     },
@@ -12,6 +48,7 @@
         "app": "Phaser Editor 2D - Asset Pack Editor",
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
-        "version": 2
+        "version": 2,
+        "showAllFilesInBlocks": false
     }
 }
