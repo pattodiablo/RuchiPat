@@ -20,6 +20,8 @@ class PatPlayer extends Phaser.GameObjects.Sprite {
 		var physicsObject = this.scene.matter.add.gameObject(this);
 		physicsObject.setFrictionAir(0.01);
 		physicsObject.setBounce(0.9);
+
+		this.scene.toWakeObjects.push(physicsObject);
 	}
 
 	/* END-USER-CODE */

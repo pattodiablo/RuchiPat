@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'matter',
 			matter: {
-				enableSleeping: false,
+				enableSleeping: true,
 				gravity: {
 					y: 0.5
 				},
