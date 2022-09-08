@@ -31,6 +31,13 @@
                 "key": "ruchi"
             },
             {
+                "url": [
+                    "src/scenes/Prefabs/RuchiPlayer.js"
+                ],
+                "type": "scripts",
+                "key": "RuchiPlayer"
+            },
+            {
                 "url": "assets/Images/stick1.svg",
                 "svgConfig": {
                     "width": 0,

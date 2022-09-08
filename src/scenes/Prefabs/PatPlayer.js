@@ -10,6 +10,7 @@ class PatPlayer extends Phaser.GameObjects.Sprite {
 
 		/* START-USER-CTR-CODE */
 		this.scene.events.on("create", () => this.create());
+		this.scene.events.on("update", () => this.update());
 		/* END-USER-CTR-CODE */
 	}
 
@@ -20,8 +21,35 @@ class PatPlayer extends Phaser.GameObjects.Sprite {
 		var physicsObject = this.scene.matter.add.gameObject(this);
 		physicsObject.setFrictionAir(0.01);
 		physicsObject.setBounce(0.9);
+	
+		this.body.name="PatPlayer";
+		this.reachRuchi=false;
+		this.body.isOnBranch=false;
 
 		this.scene.toWakeObjects.push(physicsObject);
+		let RuchiPlayer = this.scene.RuchiPlaye
+		let PatPlayer = this;
+		this.setCollisionCategory(this.scene.players);
+	
+		
+	
+	}
+
+	checkAnimationStatus(){
+
+		if(this.body.isOnBranch){
+			console.log("animacion para branche");
+		}else{
+
+			console.log("volar ");
+		}
+
+	}
+
+	update(){
+		this.checkAnimationStatus()
+	
+	
 	}
 
 	/* END-USER-CODE */

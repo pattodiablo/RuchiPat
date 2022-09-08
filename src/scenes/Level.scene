@@ -50,56 +50,70 @@
             "scaleY": 1
         },
         {
-            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
-            "id": "dbc946bc-5f9d-4797-9a2e-bdc8bd45037a",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "chinche_2",
-            "components": [],
-            "x": 196,
-            "y": 567
-        },
-        {
-            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
-            "id": "a407ff7b-9253-44c5-8913-a20942b71311",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "chinche_3",
-            "components": [],
-            "x": 406,
-            "y": 554
-        },
-        {
-            "prefabId": "a446d3e4-7b79-4bb9-9b4e-fbcc7107be1d",
-            "id": "b0ad0d79-8955-483c-8f6d-cd40bd8ad225",
-            "unlock": [
-                "x",
-                "y",
-                "scaleX",
-                "scaleY"
-            ],
-            "label": "stickSvg_1",
-            "components": [],
-            "x": 314,
-            "y": 509,
-            "scaleX": 1,
-            "scaleY": 1
-        },
-        {
             "prefabId": "e7c4e387-bf6b-46f9-830b-c0ddaea04ba4",
             "id": "654aea62-6be0-46ba-a15d-1818602461d4",
             "unlock": [
                 "x",
                 "y"
             ],
-            "label": "pat",
+            "label": "patPlayer",
+            "scope": "CLASS",
             "components": [],
-            "x": 234,
-            "y": 106
+            "x": 270,
+            "y": 164
+        },
+        {
+            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
+            "id": "f5823a67-8de8-41a8-b8b6-a4acecff204a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chinche_4",
+            "components": [],
+            "x": 412,
+            "y": 856
+        },
+        {
+            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
+            "id": "5447ee1f-9bc9-4687-88be-584d72ed74ea",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chinche_5",
+            "components": [],
+            "x": 216,
+            "y": 856
+        },
+        {
+            "prefabId": "a446d3e4-7b79-4bb9-9b4e-fbcc7107be1d",
+            "id": "64c66de1-f425-465b-a521-b5971273ff42",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "stickSvg_2",
+            "components": [],
+            "x": 318,
+            "y": 826,
+            "scaleX": 1,
+            "scaleY": 1
+        },
+        {
+            "prefabId": "b784997f-8de4-4740-95cd-479d8b3afb9d",
+            "id": "45d94676-d6f5-44ea-bf29-b7e9bbf4ffc0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "ruchiPlayer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 330,
+            "y": 742
         }
     ],
     "plainObjects": [],

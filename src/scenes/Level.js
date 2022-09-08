@@ -30,26 +30,38 @@ class Level extends Phaser.Scene {
 		stickSvg.scaleX = 1;
 		stickSvg.scaleY = 1;
 
-		// chinche_2
-		const chinche_2 = new Chinche(this, 196, 567);
-		this.add.existing(chinche_2);
+		// patPlayer
+		const patPlayer = new PatPlayer(this, 270, 164);
+		this.add.existing(patPlayer);
 
-		// chinche_3
-		const chinche_3 = new Chinche(this, 406, 554);
-		this.add.existing(chinche_3);
+		// chinche_4
+		const chinche_4 = new Chinche(this, 412, 856);
+		this.add.existing(chinche_4);
 
-		// stickSvg_1
-		const stickSvg_1 = new StickSvg(this, 314, 509);
-		this.add.existing(stickSvg_1);
-		stickSvg_1.scaleX = 1;
-		stickSvg_1.scaleY = 1;
+		// chinche_5
+		const chinche_5 = new Chinche(this, 216, 856);
+		this.add.existing(chinche_5);
 
-		// pat
-		const pat = new PatPlayer(this, 234, 106);
-		this.add.existing(pat);
+		// stickSvg_2
+		const stickSvg_2 = new StickSvg(this, 318, 826);
+		this.add.existing(stickSvg_2);
+		stickSvg_2.scaleX = 1;
+		stickSvg_2.scaleY = 1;
+
+		// ruchiPlayer
+		const ruchiPlayer = new RuchiPlayer(this, 330, 742);
+		this.add.existing(ruchiPlayer);
+
+		this.patPlayer = patPlayer;
+		this.ruchiPlayer = ruchiPlayer;
 
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {PatPlayer} */
+	patPlayer;
+	/** @type {RuchiPlayer} */
+	ruchiPlayer;
 
 	/* START-USER-CODE */
 
@@ -59,8 +71,41 @@ class Level extends Phaser.Scene {
 		this.load.xml('stick', "assets/images/stick1.svg");
 	}
 	create() {
+
+		this.players = this.matter.world.nextCategory();
+		this.branches = this.matter.world.nextCategory();
+		this.havecollided = false
 		this.toWakeObjects=[];	
 		this.editorCreate();
+
+		this.matter.world.on('collisionstart', function (event, bodyA, bodyB) {
+
+			if(bodyA.name == "PatPlayer" &&  bodyB.name=="RuchiPlayer" && !this.havecollided){
+
+				console.log("tortolos colliding");
+				this.havecollided=true;
+			}
+			
+			if(bodyB.name == "PatPlayer"  && bodyA.name=="Stick"){
+				bodyB.isOnBranch=true;
+			}
+			
+			
+
+	});
+
+	
+	this.matter.world.on('collisionend', function (event, bodyA, bodyB) {
+
+		if(bodyB.name == "PatPlayer" && !bodyB.isSleeping){
+			bodyB.isOnBranch=false;
+		}
+
+	});
+
+
+
+
 
 	}
 

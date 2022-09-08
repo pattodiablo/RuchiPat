@@ -28,6 +28,12 @@ class StickSvg extends Phaser.GameObjects.Sprite {
 		physicsObject.body.destroy();
 		this.scene.toWakeObjects.push(physicsObject);
 		physicsObject.body=svgObjectBody;
+		physicsObject.name="Stick";
+	
+		physicsObject.body.parts.forEach(branch => {
+				branch.name="Stick";
+		});
+		
 		this.destroy();
 
 
