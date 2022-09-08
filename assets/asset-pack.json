@@ -31,6 +31,16 @@
                 "key": "ruchi"
             },
             {
+                "url": "assets/Images/stick1.svg",
+                "svgConfig": {
+                    "width": 0,
+                    "height": 0,
+                    "scale": 0
+                },
+                "type": "svg",
+                "key": "stick"
+            },
+            {
                 "url": [
                     "src/scenes/Prefabs/Stick.js"
                 ],
@@ -40,7 +50,14 @@
             {
                 "url": "assets/Images/stick1.png",
                 "type": "image",
-                "key": "stick1"
+                "key": "stick2"
+            },
+            {
+                "url": [
+                    "src/scenes/Prefabs/StickSvg.js"
+                ],
+                "type": "scripts",
+                "key": "StickSvg"
             }
         ]
     },

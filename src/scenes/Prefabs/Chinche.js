@@ -18,10 +18,14 @@ class Chinche extends Phaser.GameObjects.Sprite {
 		create(){
 			
 			var physicsObject = this.scene.matter.add.gameObject(this,{isStatic:true});
+			
 			this.setInteractive();
 
 			this.on('pointerdown', function (pointer) {
 
+				this.scene.toWakeObjects.forEach(wakeUpObjt => {
+					wakeUpObjt.setAwake();
+				});
 				this.destroy();
 		
 			});

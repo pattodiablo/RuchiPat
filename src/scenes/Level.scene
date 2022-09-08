@@ -4,33 +4,11 @@
     "settings": {
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "Level"
+        "sceneKey": "Level",
+        "borderWidth": 640,
+        "borderHeight": 960
     },
     "displayList": [
-        {
-            "prefabId": "e7c4e387-bf6b-46f9-830b-c0ddaea04ba4",
-            "id": "654aea62-6be0-46ba-a15d-1818602461d4",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "pat",
-            "components": [],
-            "x": 408,
-            "y": 69
-        },
-        {
-            "prefabId": "e8060d1e-19ca-4fd4-8343-4f86720f40c0",
-            "id": "4a4f2661-d964-4cd9-a5dc-ae0bc612c676",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "stick1",
-            "components": [],
-            "x": 399,
-            "y": 289
-        },
         {
             "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
             "id": "191b21d4-10d4-49de-8b0a-db92c47a45d0",
@@ -40,8 +18,8 @@
             ],
             "label": "chinche",
             "components": [],
-            "x": 208,
-            "y": 338
+            "x": 165,
+            "y": 329
         },
         {
             "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
@@ -52,8 +30,76 @@
             ],
             "label": "chinche_1",
             "components": [],
-            "x": 606,
-            "y": 351
+            "x": 347,
+            "y": 331
+        },
+        {
+            "prefabId": "a446d3e4-7b79-4bb9-9b4e-fbcc7107be1d",
+            "id": "c3d58162-1790-493e-8b58-4e7d3e36c841",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "stickSvg",
+            "components": [],
+            "x": 229,
+            "y": 265,
+            "scaleX": 1,
+            "scaleY": 1
+        },
+        {
+            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
+            "id": "dbc946bc-5f9d-4797-9a2e-bdc8bd45037a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chinche_2",
+            "components": [],
+            "x": 196,
+            "y": 567
+        },
+        {
+            "prefabId": "5a329e19-df08-4097-ab13-82184921282b",
+            "id": "a407ff7b-9253-44c5-8913-a20942b71311",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chinche_3",
+            "components": [],
+            "x": 406,
+            "y": 554
+        },
+        {
+            "prefabId": "a446d3e4-7b79-4bb9-9b4e-fbcc7107be1d",
+            "id": "b0ad0d79-8955-483c-8f6d-cd40bd8ad225",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "stickSvg_1",
+            "components": [],
+            "x": 314,
+            "y": 509,
+            "scaleX": 1,
+            "scaleY": 1
+        },
+        {
+            "prefabId": "e7c4e387-bf6b-46f9-830b-c0ddaea04ba4",
+            "id": "654aea62-6be0-46ba-a15d-1818602461d4",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "pat",
+            "components": [],
+            "x": 234,
+            "y": 106
         }
     ],
     "plainObjects": [],
