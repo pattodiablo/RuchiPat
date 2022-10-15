@@ -31,6 +31,12 @@
                 "key": "ruchi"
             },
             {
+                "atlasURL": "assets/atlas/RuchiPatAnimations.json",
+                "textureURL": "assets/atlas/RuchiPatAnimations.png",
+                "type": "atlas",
+                "key": "RuchiPatAnimations"
+            },
+            {
                 "url": [
                     "src/scenes/Prefabs/RuchiPlayer.js"
                 ],
